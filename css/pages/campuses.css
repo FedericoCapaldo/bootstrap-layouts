@@ -1,8 +1,14 @@
 /* TODO: Build layout for campuses page */
+.main-container {
+  display: flex;
+}
+
 .cards {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 16px;
+  padding: 16px;
+  flex-grow: 1;
 }
 
 @media(min-width: 768px) {
@@ -15,4 +21,10 @@
   .cards {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
+}
+
+.map-component {
+  height: 100vh;
+  position: sticky;
+  top: 0;
 }
